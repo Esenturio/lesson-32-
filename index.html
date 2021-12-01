@@ -5,9 +5,130 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="wrapper">
+  <header class="header">
+
+    <div class="navbar ">
+      <div class="container flex">
+
+        <div class="logo mr-auto">
+          <img src="img/logo.svg" alt="" class="img">
+        </div>
   
+        <nav class="nav flex">
+          <a href="#" class="nav__link">Platform</a>
+          <a href="#" class="nav__link">Solutions</a>
+          <a href="#" class="nav__link">Resources</a>
+          <a href="#" class="nav__link">Developers</a>
+          <a href="#" class="nav__link">Company</a>
+          <a href="#" class="nav__link">Pricing</a>
+        </nav>
+  
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+  
+        <div class="buttons flex ml-auto">
+          <button class="btn-white btn">Sign in</button>
+          <button class="btn">Start free</button>
+        </div>
+  
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class=" flex header__info">
+
+        <div class="first-one mr-auto">
+          <h4 class="m-0 citate">Build / Secure / Deliver</h4>
+          <h1 class="m-0 title">The Ionic approach.</h1>
+        </div>
+
+        <div class="second-one">
+          <p class="m-0 info">Ionic’s full-service platform allows businesses to accelerate web-based app development without having to bring in outside talent.</p>
+        </div>
+
+      </div>
+
+      <ul class="third">
+
+        <li class="item">
+          <div class="icon">
+            <svg width="100px" height="100px">
+              <rect class="rect-1" width="50" height="50" stroke-width="6" fill="none" x="10" y="36" rx="13" stroke="#9E97FE" />
+              <rect class="rect-2" width="45" height="45" stroke-width="6" fill="none" x="30" y="16" rx="13"  />
+
+            </svg>
+          </div>
+          <h2 class="item__title m-0">Build</h2>
+          <p class="item__info m-0">Leverage the power of the web to build and develop better critical apps faster with your existing web talent.</p>
+        </li>
+
+        <li class="item">
+          <div class="icon">
+            <svg width="100px" height="100px">
+              <rect class="rect-4" width="25" height="45" stroke-width="6" fill="none" x="35" y="16" rx="13" stroke="#F1CE7E" />
+              <rect class="rect-3" width="75" height="50" stroke-width="6" fill="none" x="10" y="36" rx="13" stroke="#EDA300" />
+            </svg>
+          </div>
+          <h2 class="item__title m-0">Secure</h2>
+          <p class="item__info m-0">Enjoy open source benefits with the security and peace of mind from enterprise grade support and reliability.</p>
+        </li>
+
+        <li class="item">
+          <div class="icon">
+            <svg width="100px" height="100px">
+              <polygon points="10,30 10,90 60,60" r="13" stroke="#7BDFBE" fill="none" stroke-width="6" stroke-linejoin="round" />
+              <rect class="rect-5" width="45" height="45" stroke-width="6" fill="none" x="30" y="36" rx="13" stroke="#00C680" />
+
+
+            </svg>
+          </div>
+          <h2 class="item__title m-0">Deliver</h2>
+          <p class="item__info m-0">Publish your apps with ease, deliver them continuously, and deploy live updates in minutes.</p>
+        </li>
+
+      </ul>
+ 
+      <div class="investors">
+        <span class="icon-partner-1 icon"></span>
+        <span class="icon-partner-2 icon"></span>
+        <span class="icon-partner-3 icon"></span>
+        <span class="icon-partner-4 icon"></span>
+        <span class="icon-partner-5 icon"></span>
+        <span class="icon-partner-6 icon"></span>
+        <span class="icon-partner-7 icon"></span>
+      </div>
+
+    </div>
+
+  </header>
+</div>
+
+
+
+
+
+
+<script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var nav = document.querySelector(".nav");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    nav.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+</script>
+
 </body>
 </html>

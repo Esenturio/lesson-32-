@@ -1,0 +1,99 @@
+.navbar
+  padding: 1.125rem 0
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1)
+  margin-bottom: 4.375rem
+.nav
+  a
+    padding: 0 1.25rem
+    color: $text-color
+    font-size: 0.9375rem
+    @include media(882px)
+      padding: 2rem
+      font-size: 20px
+      color: $text-black
+
+.header__info
+  align-items: normal
+  margin-bottom: 5rem
+  @include media(570px)
+    flex-direction: column
+    justify-content: center
+.first-one
+  @include media(800px)
+    margin-right: 30px
+  @include media(570px)
+    text-align: center
+.citate
+  color: rgba(146, 160, 179, 1)
+  letter-spacing: 0.14rem
+  font-size: 0.8125rem
+  text-transform: uppercase
+  margin-bottom: 1.875rem 
+  font-family: serif
+.title
+  font-size: 3.875rem
+  line-height: 4rem
+  max-width: 20.625rem
+  color: $text-black
+  @include media(570px)
+    margin: 0 auto 1.875rem
+    width: auto
+  @include media(320px)
+    // word-wra
+.second-one
+  padding: 0 0.2rem
+  align-self: flex-end
+  max-width: 26.875rem
+  font-size: 1rem
+  line-height: 1.625rem
+  letter-spacing: 0.0125rem
+  @include media(570px)
+    margin: 0 auto
+    min-width: 40px
+    text-align: center
+
+
+
+.third
+  @include grid(null, null, null, repeat(3, 1fr), 32px )
+  @include media(992px)
+    // display: grid
+    grid-template-columns: repeat(2, 1fr)
+    justify-content: center
+    li
+      margin: 0 auto
+  @include media(702px)
+    grid-template-columns: repeat(1, 1fr)
+.item
+  max-width: 360px
+  padding: 40px 35px
+  background: #F6F8FC
+  border-radius: 1rem
+.icon
+  margin-bottom: 2.5rem
+.rect-2
+  stroke: $color-violet
+.item__title
+  font-size: $s-20
+  color: $text-black
+.item__title
+  margin-bottom: 1.125rem
+.item__info
+  font-size: 1rem
+  line-height: 1.625rem
+
+
+
+.investors
+  padding: 5.625rem 0
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: center
+  span
+    font-size: 2.5rem
+    padding: 0 1.5rem
+    color: $text-black
+    transition: 0.5s
+.icon:hover
+  color: $color-violet
